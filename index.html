@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script  src="js/jquery1.8.3.min.js"></script>	
+	</head>
+	<body>
+		<header id="topBox">
+		<img src="" alt="" />
+		<span>IT Operation and maintenance  system</span>
+		<ul>
+			<li><img src="img/登录时间.svg"/><span>登录时间</span></li>
+			<li><img src="img/用户.svg"/><span>人物名称</span></li>
+			<li><img src="img/退出.svg"/></li>
+		</ul>
+	</header>
+	<nav id="navBox">
+		<div> <span id="shrink"></span></div>
+		<ul>
+			<li>我的首页</li>
+			<li>运维管理</li>
+			<li>监控管理</li>
+			<li>报表统计</li>
+			<li>权限管理</li>
+			<li>系统管理</li>
+		</ul>
+	</nav>
+	<div id="mianBox">
+		<section id="navLeft">
+			<ul>
+				<li class="active">
+					<img src="img/首页.svg" alt="" />
+					<span>我的首页</span>
+					<img class="unfold" src="img/点击展开.svg" alt="" />
+				</li>
+				<li>
+					<img src="img/运维工作.svg" alt="" />
+					<span>运维管理</span>
+					<img class="unfold"  src="img/点击展开.svg" alt="" />
+				</li>
+				<li>
+					<img src="img/监控管理.svg" alt="" />
+					<span>监控管理</span>
+					<img class="unfold"  src="img/点击展开.svg" alt="" />
+				</li>
+				<li>
+					<img src="img/报表统计.svg" alt="" />
+					<span>报表统计</span>
+					<img class="unfold"  src="img/点击展开.svg" alt="" />
+				</li>
+				<li>
+					<img src="img/快速查询.svg" alt="" />
+					<span>权限管理</span>
+					<img class="unfold"  src="img/点击展开.svg" alt="" />
+				</li>
+				<li>
+					<img src="img/系统管理.svg" alt="" />
+					<span>系统管理</span>
+					<img class="unfold"  src="img/点击展开.svg" alt="" />
+				</li>				
+			</ul>
+		</section>
+		<section id="main">
+			<div class="mainCont">
+				<div class="mainTop">
+					<div class="mainBoard announce">
+						<h3>
+							<em></em>
+							<span>通告</span>
+							<ul>
+								<li><img src="img/下拉菜单.svg" alt="" /></li>
+								<li><img src="img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+					 <div class="mainBoard limit">
+						<h3>
+							<em></em>
+							<span>权限审核申请</span>
+							<ul>
+								<li><img src="img/下拉菜单.svg" alt="" /></li>
+								<li><img src="img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="mainMiddle">
+					<div class="mainBoard opsEvent">
+						<h3>
+							<em></em>
+							<span>运维事项</span>
+							<ul>
+								<li><img src="img/下拉菜单.svg" alt="" /></li>
+								<li><img src="img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							<table class="table table-bordered">
+								<tr>
+									<th>运维编号</th>
+									<th>报障系统</th>
+									<th>报障来源</th>
+									<th>上报数量</th>
+									<th>报障方式</th>
+									<th>报障时间</th>
+									<th>报障说明</th>									
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="mainBottom">
+					<div class="mainBoard opsChart">
+						<h3>
+							<em></em>
+							<span>运维事件分析图</span>
+							<ul>
+								<li><img src="img/下拉菜单.svg" alt="" /></li>
+								<li><img src="img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+					<div class="mainBoard  controlChart">
+						<h3>
+							<em></em>
+							<span>监控系统告警统计出错率</span>
+							<ul>
+								<li><img src="img/下拉菜单.svg" alt="" /></li>
+								<li><img src="img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+	</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//点击收缩侧边栏
+			var flag = true;//定义开关
+			$("#shrink").click(function(){
+				if(flag){
+					//收缩
+					$("#navBox>div").animate({
+						width:"60px"						
+					},500);
+					$("#navBox>ul").animate({
+						marginLeft:"60px"
+					},500);
+					$("#navLeft").animate({
+						width:"60px"
+					},500);
+					$("#main").animate({
+						marginLeft:"60px"
+					},500);
+					$("#navLeft li span").css({
+						display:"none"
+					});
+					$(".unfold").css({
+						display:"none"
+					});
+				}else{
+					$("#navBox>div").animate({
+						width:"240px"						
+					},500);
+					$("#navBox>ul").animate({
+						marginLeft:"240px"
+					},500);
+					$("#navLeft").animate({
+						width:"240px"
+					},500);
+					$("#main").animate({
+						marginLeft:"240px"
+					},500,function(){
+						$("#navLeft li span").css({
+							display:"block"
+						});
+						$(".unfold").css({
+							display:"block"
+						});
+					});
+					
+				}
+				flag = !flag;
+			})
+		})
+	</script>
+</html>

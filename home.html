@@ -1,0 +1,371 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>运维平台首页</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />				
+		<link href="${basePath}/platform-web/js/common/bootstrap/3.3.5/css/bootstrap.min.css?${_v}" rel="stylesheet"/>
+		<link href="${basePath}/platform-web/css/login/index.css?${_v}" rel="stylesheet"/>	
+		<script  src="${basePath}/platform-web/js/common/jquery/jquery1.8.3.min.js"></script>	
+		<script  src="${basePath}/platform-web/js/common/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+</head>
+	
+<body>
+	<header id="topBox">
+		<img src="" alt="" />
+		<span>IT Operation and maintenance  system</span>
+		<ul>
+			<li><img src="${basePath}/platform-web/img/登录时间.svg"/><span>登录时间</span></li>
+			<li><img src="${basePath}/platform-web/img/用户.svg"/><span>人物名称</span></li>
+			<li><img src="${basePath}/platform-web/img/退出.svg"/></li>
+		</ul>
+	</header>
+	<nav id="navBox">
+		<div> <span id="shrink"></span></div>
+		<ul>
+			<li  class="active">我的首页</li>
+			<li>运维管理</li>
+			<li>监控管理</li>
+			<li>报表统计</li>
+			<li>权限管理</li>
+			<li>系统管理</li>
+		</ul>
+	</nav>
+	<div id="mianBox">
+		<section id="navLeft">
+			<ul>
+				<li  class="active">
+					<div>
+						<img src="${basePath}/platform-web/img/首页.svg" alt="" />
+						<span>我的首页</span>
+						<img class="unfold" src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>					
+				</li>
+				<li>
+					<div>
+						<img src="${basePath}/platform-web/img/运维工作.svg" alt="" />
+						<span>运维管理</span>
+						<img class="unfold"  src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>
+					<ul class="menuTwo">
+						<li class="active">运维事件</li>
+						<li>NEWCCA</li>
+						<li>DATAQUERY</li>
+						<li>PEROROER</li>
+					</ul>
+				</li>
+				<li>
+					<div>
+						<img src="${basePath}/platform-web/img/监控管理.svg" alt="" />
+						<span>监控管理</span>
+						<img class="unfold"  src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>
+					<ul class="menuTwo">
+						<li class="active">运维事件</li>
+						<li>NEWCCA</li>
+						<li>DATAQUERY</li>
+						<li>PEROROER</li>
+					</ul>
+				</li>
+				<li>
+					<div>
+						<img src="${basePath}/platform-web/img/报表统计.svg" alt="" />
+						<span>报表统计</span>
+						<img class="unfold"  src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="${basePath}/platform-web/img/快速查询.svg" alt="" />
+						<span>权限管理</span>
+						<img class="unfold"  src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="${basePath}/platform-web/img/系统管理.svg" alt="" />
+						<span>系统管理</span>
+						<img class="unfold"  src="${basePath}/platform-web/img/点击展开.svg" alt="" />
+					</div>
+				</li>				
+			</ul>
+		</section>
+		<section id="main">
+			<div class="mainCont">
+				<div class="mainTop dragBoard">
+					<div class="mainBoard announce">
+						<h3>
+							<em></em>
+							<span>通告</span>
+							<ul>
+								<li class="btn-slide"><img src="${basePath}/platform-web/img/下拉菜单.svg" alt="" /></li>
+								<li><img src="${basePath}/platform-web/img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+					 <div class="mainBoard limit">
+						<h3>
+							<em></em>
+							<span>权限审核申请</span>
+							<ul>
+								<li class="btn-slide"><img src="${basePath}/platform-web/img/下拉菜单.svg" alt="" /></li>
+								<li><img src="${basePath}/platform-web/img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="mainMiddle dragBoard">
+					<div class="mainBoard opsEvent">
+						<h3>
+							<em></em>
+							<span>运维事项</span>
+							<ul>
+								<li class="btn-slide"><img src="${basePath}/platform-web/img/下拉菜单.svg" alt="" /></li>
+								<li><img src="${basePath}/platform-web/img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							<table class="table table-bordered">
+								<tr>
+									<th>运维编号</th>
+									<th>报障系统</th>
+									<th>报障来源</th>
+									<th>上报数量</th>
+									<th>报障方式</th>
+									<th>报障时间</th>
+									<th>报障说明</th>									
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="mainBottom dragBoard">
+					<div class="mainBoard opsChart">
+						<h3>
+							<em></em>
+							<span>运维事件分析图</span>
+							<ul>
+								<li class="btn-slide"><img src="${basePath}/platform-web/img/下拉菜单.svg" alt="" /></li>
+								<li><img src="${basePath}/platform-web/img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div>
+					<div class="mainBoard  controlChart">
+						<h3>
+							<em></em>
+							<span>监控系统告警统计出错率</span>
+							<ul>
+								<li class="btn-slide"><img src="${basePath}/platform-web/img/下拉菜单.svg" alt="" /></li>
+								<li><img src="${basePath}/platform-web/img/刷新.svg" alt="" /></li>
+							</ul>
+						</h3>
+						<div>
+							
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+	<script>
+		$(function(){			
+			//点击收缩侧边栏
+			var flag = true;//定义开关
+			$("#shrink").click(function(){
+				if(flag){
+					//收缩
+					$("#navBox>div").animate({
+						width:"60px"						
+					},500);
+					$("#navBox>ul").animate({
+						marginLeft:"60px"
+					},500);
+					$("#navLeft").animate({
+						width:"60px"
+					},500);
+					$("#main").animate({
+						marginLeft:"60px"
+					},500);
+					$("#navLeft li span").hide();
+					$(".unfold").hide();
+				}else{
+					$("#navBox>div").animate({
+						width:"240px"						
+					},500);
+					$("#navBox>ul").animate({
+						marginLeft:"240px"
+					},500);
+					$("#navLeft").animate({
+						width:"240px"
+					},500);
+					$("#main").animate({
+						marginLeft:"240px"
+					},500,function(){
+						$("#navLeft li span").show();
+						$(".unfold").show();
+					});
+					
+				}
+				flag = !flag;
+			})
+			//点击展开子菜单
+			$(".unfold").click(function(){
+				$(this).parent().next().stop().slideToggle(500);
+			})
+			//选项卡切换效果
+			$("#navLeft>ul>li").click(function(){				
+				for(var i=0;i<$("#navLeft>ul>li").length;i++){
+					$("#navLeft>ul>li").removeClass("active");
+					$("#navBox>ul>li").removeClass("active");
+				}
+				$(".menuTwo").hide();
+				$(this).addClass("active");
+				$(this).find(".menuTwo").show();
+				$("#navBox>ul>li").eq($(this).index()).addClass("active");
+			})
+			$(".menuTwo>li").click(function(){
+				$(this).parent().children().removeClass("active");
+				$(this).addClass("active");
+			})
+			//模块拖动效果
+			//获取mainTop的高度和外margin
+			var _h = $(".mainTop").outerHeight();
+			//获取mianCont的高度；
+			var _height = $(".mainCont").outerHeight();	
+			function drag(obj){//拖拽封装
+				obj.dragId.mousedown(function(event){
+					var e = event || window.event;
+					
+					//获取模块父元素相对于窗口的偏移坐标
+					var _x = $(this).parent().offset().left,
+						_y = $(this).parent().offset().top;			
+					//获取鼠标到父元素顶部的距离
+					var _fy = e.pageY - $(this).offset().top;
+					//记录鼠标当前的位置；
+					var startY = e.pageY;
+					$(document).on("mousemove",function(event){
+						var e = event || window.event;
+						var _flag = true;
+						for(var i = 0; i<$(".mainBoard").length;i++){
+							$(".mainBoard").eq(i).find("div").css("display");
+							if($(".mainBoard").eq(i).find("div").css("display") == "none"){
+								_flag = false;
+								break;
+							}
+						}
+						if(_flag){
+							var _top  = obj.changeId.position().top;						
+							obj.changeId.css({
+								"position":"absolute",
+								"left":0,
+								"top":_top + "px",
+								"zIndex":0
+							})
+							//获取鼠标的位置
+							var 				
+								fx = e.pageX ,
+								fy = e.pageY;
+							obj.dragId.css({
+								"position":"absolute",
+								"top":fy - _y -_fy -20 + "px",
+								"zIndex":1
+							})
+							if(e.pageY - _y -_fy< _h){//判断上边缘
+								obj.dragId.css({
+									"top":_h + "px"
+								})
+							}
+							if(e.pageY - _y -_fy> _height - (obj.dragId.outerHeight() + 20)){
+								obj.dragId.css({
+									"top":_height - (obj.dragId.outerHeight() + 20) + "px"
+								})
+							}
+							if(Math.abs(e.pageY - startY) > obj.dragDistance){//判断移动的距离
+								if(e.pageY - startY>0){							
+									obj.changeId.after(obj.dragId);
+								}else{
+									obj.changeId.before(obj.dragId);
+								}
+							} 
+						}						
+					})
+				})
+				$(document).mouseup(function(){
+					$(document).off("mousemove");
+					obj.dragId.css({
+						"position":"static"
+					})
+					obj.changeId.css({
+						"position":"static"
+					}) 
+				})
+			}
+			
+			drag({
+				dragId:$(".mainMiddle"),//拖拽的元素
+				changeId:$(".mainBottom"),//交换位置的元素
+				dragDistance:100   //判断拖拽多少距离进行交换
+			})
+			drag({
+				dragId:$(".mainBottom"),//拖拽的元素
+				changeId:$(".mainMiddle"),//交换位置的元素
+				dragDistance:100   //判断拖拽多少距离进行交换
+			})
+			//板块收缩；
+			$(".btn-slide").click(function(){
+				//console.log($(this).parents(".mainBoard").find("div"))
+				$(this).parents(".mainBoard").find("div").stop().slideToggle(500);
+			})
+			
+		})
+		
+	</script>
+</html>
